@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.todo-item {
+  @apply mb-2 w-full bg-white rounded;
+}
+
+.todo-item.completed {
+  /* @apply opacity-20 bg-transparent; */
+  @apply opacity-60;
+}
+.todo-div {
+  @apply flex flex-col w-[100%] ml-auto mr-auto;
+}
+
+.todo-todo {
+  @apply py-2 px-4  text-left break-words;
+}
+.completed .todo-todo {
+  @apply line-through;
+}
+
+.todo-task {
+  @apply flex flex-row justify-between items-center w-full px-4 border-t border-slate-200 bg-slate-100 rounded;
+}
+
+.todo-date {
+  @apply min-w-fit py-2 bg-transparent text-sm;
+}
+
+.complete-btn {
+  @apply bg-amber-300 px-4 py-1;
+}
+
+.trash-btn {
+  @apply ml-8 bg-lime-300 px-4 py-1;
+}

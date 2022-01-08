@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS_Todo</title>
+    <link rel="stylesheet" href="./src/styles_dev.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script type="module" crossorigin src="./index.js" defer></script>
+  </head>
+  <body class="h-screen p-4 bg-gradient-to-l from-green-500 to-green-700">
+    <header>
+      <h1 class="pt-12 text-center text-5xl text-yellow-400">TO DO APP</h1>
+    </header>
+
+    <div class="flex flex-col justify-center mt-4 ml-auto mr-auto w-[80%]">
+      <form id="js-form" class="flex flex-row justify-center items-end text-white">
+        <label class="block grow"
+          >新規Todo
+          <input
+            type="text"
+            placeholder="Todoを入力"
+            id="todo"
+            class="px-2 w-full h-10 rounded text-m text-gray-600 placeholder-blueGray-300 border-0 shadow outline-none focus:outline-none focus:ring"
+            required
+          />
+        </label>
+        <label class="ml-2 block"
+          >期限 <input type="date" class="px-2 w-full h-10 rounded text-m placeholder-blueGray-300 text-gray-600 border-0 shadow outline-none focus:outline-none focus:ring" required
+        /></label>
+
+        <button id="submit" disabled class="min-w-fit h-10 ml-2 px-4 py-2 rounded bg-slate-200 text-m">登録</button>
+      </form>
+
+      <div class="mt-2 flex flex-row justify-end">
+        <button id="sort-date" class="mt-2 h-10 px-4 rounded bg-white hover:bg-orange-400">入力順で並び替え</button>
+        <button id="sort-limit" class="mt-2 ml-8 h-10 px-4 rounded bg-white hover:bg-orange-400">期限順で並び替え</button>
+      </div>
+
+      <ul class="todo-list mt-8 w-full">
+        <!-- Template -->
+        <!-- <li class="todo-item">
+            <div class="todo-div">
+              <p class="todo-todo">todoです</p>
+              <div class="todo-task">
+                <p class="todo-date">期限 2020-01-01</p>
+                <div>
+                  <button class="complete-btn">
+                    <i class="fas fa-check"></i>
+                  </button>
+                  <button class="trash-btn">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        <!-- Template -->
+      </ul>
+    </div>
+  </body>
+</html>
