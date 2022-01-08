@@ -7,7 +7,6 @@
 }
 
 .todo-item.completed {
-  /* @apply opacity-20 bg-transparent; */
   @apply opacity-60;
 }
 .todo-div {
@@ -17,6 +16,7 @@
 .todo-todo {
   @apply py-2 px-4  text-left break-words;
 }
+
 .completed .todo-todo {
   @apply line-through;
 }
@@ -35,4 +35,8 @@
 
 .trash-btn {
   @apply ml-8 bg-lime-300 px-4 py-1;
+}
+
+.fas {
+  @apply pointer-events-none;
 }
