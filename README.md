@@ -1,3 +1,3 @@
 # JS_TODO
 
-Vanilla JS で　TodoListアプリを作成
+Vanilla JS で TodoList アプリを作成
