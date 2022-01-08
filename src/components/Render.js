@@ -17,10 +17,10 @@ export function Render() {
             <p class="todo-date">${list.limit}</p>
             <div>
               <button class="list${index} complete-btn">
-                <i class="fas fa-check"></i>
+                <i class="pointer-events-none fas fa-check"></i>
               </button>
               <button class="list${index} trash-btn">
-                <i class="fas fa-trash"></i>
+                <i class="pointer-events-none fas fa-trash"></i>
               </button>
             </div>
           </div>

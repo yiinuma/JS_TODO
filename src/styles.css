@@ -36,7 +36,3 @@
 .trash-btn {
   @apply ml-8 bg-lime-300 px-4 py-1;
 }
-
-.fas {
-  @apply pointer-events-none;
-}
