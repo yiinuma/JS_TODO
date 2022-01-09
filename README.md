@@ -7,9 +7,9 @@ Visual Studio Codeをお使いであれば、[Live Sever](https://marketplace.vi
 
 あるいは、phpコマンドでLocal Serveを起動します
 ```
-$ php -S localhost:8080
+$ php -S localhost:8000
 ```
-その後、[http://localhost:3000 ](http://localhost:3000) にアクセスすることにより、index.htmlが読み込まれます
+その後、[http://localhost:8000 ](http://localhost:8000) にアクセスすることにより、index.htmlが読み込まれます
 
 <br>
 そして開発サーバーを立ち上げます<br>
