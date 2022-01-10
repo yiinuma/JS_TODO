@@ -47,3 +47,7 @@
 .trash-btn {
   @apply ml-4 bg-lime-300 px-4 py-1;
 }
+
+.is-open#modal {
+  @apply opacity-100 visible;
+}
