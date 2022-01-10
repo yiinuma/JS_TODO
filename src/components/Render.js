@@ -17,7 +17,7 @@ export function Render() {
           <p class="todo-todo">${list.todo}</p>
           <div class="todo-task">
             <p class="todo-date">期限: ${list.limit}
-              ${keepTheDeliveryDate ? '' : `<span class="limit-over">期限が過ぎています！！</span>`}
+              ${keepTheDeliveryDate ? '' : `<span class="limit-over">期限を過ぎています！！</span>`}
             </p>
             <div>
               <button class="list${index} edit-btn">
