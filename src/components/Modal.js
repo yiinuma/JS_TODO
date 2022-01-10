@@ -1,3 +1,8 @@
+/**
+ * Modal
+ * @param {object} todos
+ * @param {number} index
+ */
 export function Modal(todos, index) {
   const wrapper = document.querySelector('#modal');
   const bg = wrapper.querySelector('.modal-bg');
