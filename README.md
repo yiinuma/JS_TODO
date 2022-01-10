@@ -1,6 +1,7 @@
 # JS_TODO
 Vanilla JS で TodoList アプリを作成しました
-![スクリーンショット 2022-01-10 22 07 07](https://user-images.githubusercontent.com/65111001/148771177-a441efb5-ee24-43d3-a07a-851ea3272a98.png)
+![TodoAPP](https://user-images.githubusercontent.com/65111001/148771557-2827eb43-6616-446e-be37-dfedf37e8ff0.png)
+
 
 
 
