@@ -4,7 +4,11 @@
  */
 
 export function SubmitToggle(submit) {
-  submit.disabled === true
-    ? (submit.classList.add('bg-orange-400', 'hover:bg-orange-500'), submit.classList.remove('bg-slate-300'), (submit.disabled = false))
-    : (submit.classList.remove('bg-orange-400', 'hover:bg-orange-500'), submit.classList.add('bg-slate-300'), (submit.disabled = true));
+  if (submit.disabled === true) {
+    submit.classList.add('submit-enable');
+    submit.disabled = false;
+  } else {
+    submit.classList.remove('submit-enable');
+    submit.disabled = true;
+  }
 }
