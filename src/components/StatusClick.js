@@ -1,14 +1,16 @@
 import { GetLocalStorage } from './GetLocalStorage.js';
+import { Modal } from './Modal.js';
 
 // Status Click Action
 /**
+ * EditがクリックされたらModalをopen
  * ✅がクリックされたら完了状態にする
  * 🗑がクリックされたら削除
  * その後localStorageを更新する
  * @param {*} e
  */
 export function StatusClick(e) {
-  const todos = GetLocalStorage();
+  let todos = GetLocalStorage();
   const item = e.target;
   const todoLi = item.closest('.todo-item');
   const index = item.classList[0].slice(4);
@@ -19,6 +21,8 @@ export function StatusClick(e) {
   } else if (item.classList.contains('trash-btn')) {
     todoLi.remove();
     todos.splice(index, 1);
+  } else if (item.classList.contains('edit-btn')) {
+    Modal(todos, index);
   }
   localStorage.setItem('todos', JSON.stringify(todos));
 }

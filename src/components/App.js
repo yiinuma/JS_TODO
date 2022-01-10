@@ -4,7 +4,6 @@ import { SubmitToggle } from './SubmitToggle.js';
 import { Sort } from './Sort.js';
 import { StatusClick } from './StatusClick.js';
 import { AddLi } from './AddLi.js';
-import { Modal } from './Modal.js';
 
 export class App {
   constructor() {
@@ -18,7 +17,6 @@ export class App {
     const todoList = document.querySelector('.todo-list');
     const sortDateButton = document.querySelector('#sort-date');
     const sortLimitButton = document.querySelector('#sort-limit');
-    const editButton = document.querySelector('.edit-btn');
 
     // Event Listeners
     todo.addEventListener('keyup', disableCheck);
@@ -27,7 +25,6 @@ export class App {
     todoList.addEventListener('click', StatusClick);
     sortDateButton.addEventListener('click', Sort);
     sortLimitButton.addEventListener('click', Sort);
-    editButton.addEventListener('click', Modal);
 
     // Check Input & Limit
     function disableCheck() {

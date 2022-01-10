@@ -57,12 +57,13 @@
         <!-- Template -->
       </ul>
     </div>
-    <div id="modal" class="fixed top-0 left-0 opacity-0 invisible w-screen flex justify-center h-screen items-center bg-slate-500 bg-opacity-75 antialiased">
-      <div class="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
+    <div id="modal" class="transition duration-300 ease-in-out fixed top-0 left-0 opacity-0 invisible w-screen flex justify-center h-screen items-center bg-slate-500 bg-opacity-75 antialiased">
+      <div class="modal-bg z-10 absolute top-0 left-0 w-full h-full"></div>
+      <div class="z-20 flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
         <div class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg">
           <p class="font-semibold text-gray-800">Todo 編集</p>
-          <button>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button class="modal-close">
+            <svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
@@ -71,20 +72,15 @@
           <div class="flex flex-col px-6 py-5 bg-gray-50">
             <label class="mb-2 font-semibold text-gray-700"
               >Todo
-              <input
-                type="text"
-                placeholder="Todoを入力"
-                class="px-2 w-full h-10 rounded text-m text-gray-600 placeholder-blueGray-300 border-0 shadow outline-none focus:outline-none focus:ring"
-                required
-              />
+              <textarea rows="4" type="text" class="px-2 w-full rounded text-m text-gray-600 placeholder-blueGray-300 border-0 shadow outline-none focus:outline-none focus:ring" required> </textarea>
             </label>
             <label class="mt-4 mb-2 font-semibold text-gray-700"
               >期限 <input type="date" class="px-2 w-full h-10 rounded text-m placeholder-blueGray-300 text-gray-600 border-0 shadow outline-none focus:outline-none focus:ring" required
             /></label>
           </div>
           <div class="flex flex-row sitems-center justify-between p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg">
-            <button id="modal-clear" class="px-4 py-2 text-white font-semibold bg-slate-400 rounded">クリア</button>
-            <button id="moda--submit" class="px-4 py-2 text-white font-semibold bg-blue-500 rounded">保存</button>
+            <button class="modal-clear px-4 py-2 text-white font-semibold bg-slate-400 rounded">クリア</button>
+            <button class="modal-submit px-4 py-2 text-white font-semibold bg-blue-500 rounded">保存</button>
           </div>
         </form>
       </div>
