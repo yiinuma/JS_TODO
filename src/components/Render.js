@@ -16,6 +16,9 @@ export function Render() {
           <div class="todo-task">
             <p class="todo-date">期限: ${list.limit}</p>
             <div>
+              <button class="list${index} edit-btn">
+                <i class="pointer-events-none fas fa-edit"></i>
+              </button>
               <button class="list${index} complete-btn">
                 <i class="pointer-events-none fas fa-check"></i>
               </button>

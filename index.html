@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script type="module" crossorigin src="./index.js"></script>
   </head>
-  <body class="h-screen p-4 bg-gradient-to-l from-green-500 to-green-700">
+  <body class="h-screen bg-gradient-to-l from-green-500 to-green-700">
     <header>
       <h1 class="pt-12 text-center text-5xl text-yellow-400">TO DO APP</h1>
     </header>
@@ -56,6 +56,38 @@
           </li> -->
         <!-- Template -->
       </ul>
+    </div>
+    <div class="w-screen flex justify-center h-screen items-center bg-gray-200 antialiased">
+      <div class="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
+        <div class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg">
+          <p class="font-semibold text-gray-800">Todo 編集</p>
+          <button>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <form id="js-editform">
+          <div class="flex flex-col px-6 py-5 bg-gray-50">
+            <label class="mb-2 font-semibold text-gray-700"
+              >Todo
+              <input
+                type="text"
+                placeholder="Todoを入力"
+                class="px-2 w-full h-10 rounded text-m text-gray-600 placeholder-blueGray-300 border-0 shadow outline-none focus:outline-none focus:ring"
+                required
+              />
+            </label>
+            <label class="mt-4 mb-2 font-semibold text-gray-700"
+              >期限 <input type="date" class="px-2 w-full h-10 rounded text-m placeholder-blueGray-300 text-gray-600 border-0 shadow outline-none focus:outline-none focus:ring" required
+            /></label>
+          </div>
+          <div class="flex flex-row sitems-center justify-between p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg">
+            <button id="modal-clear" class="px-4 py-2 text-white font-semibold bg-slate-400 rounded">クリア</button>
+            <button id="moda--submit" class="px-4 py-2 text-white font-semibold bg-blue-500 rounded">保存</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

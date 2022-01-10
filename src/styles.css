@@ -36,10 +36,14 @@
   @apply min-w-fit py-2 bg-transparent text-sm;
 }
 
+.edit-btn {
+  @apply bg-blue-300 px-4 py-1;
+}
+
 .complete-btn {
-  @apply bg-amber-300 px-4 py-1;
+  @apply ml-4 bg-amber-300 px-4 py-1;
 }
 
 .trash-btn {
-  @apply ml-8 bg-lime-300 px-4 py-1;
+  @apply ml-4 bg-lime-300 px-4 py-1;
 }
